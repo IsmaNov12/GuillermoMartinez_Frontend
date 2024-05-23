@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    background-image: url("../imges/Lovecraft-scaled.jpeg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-repeat: repeat-x;
+    animation: moveBackground 10s linear infinite alternate-reverse;
+}
+
+@keyframes moveBackground{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+    background-position: 100% 0;
+}
+
+}
+
+.renviar{
+font-size: 12px;
+margin-left: 90px;
+}
+
+
+.login-container {
+    background-color: #556b8b98;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+}
+
+.login-container img {
+    max-width: 100px;
+    margin-bottom: 20px;
+    color: #f2f2f2;
+    filter: invert();
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    color: #f2f2f2;
+}
+
+.login-container input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 20px;
+    background-color: #ebebeb;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-container button:disabled {
+    background-color: #44629bdc;
+}
+
+.google-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DB4437;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.google-login img {
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+}
+
+.author {
+    font-size: 10px;
+    color: #cccccc;
+    margin-top: 20px;
+}
